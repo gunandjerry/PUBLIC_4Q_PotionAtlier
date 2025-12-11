@@ -1,0 +1,70 @@
+#include "CubeMeshRender.h"
+#include <NodeEditor/NodeEditor.h>
+
+void CubeMeshRender::Awake()
+{
+	PBRMeshRender::Awake();
+    SetMeshID("Cube");
+
+    ID3D11Buffer* indexBuffer = meshDrawCommand.meshData.indexBuffer;
+    if (indexBuffer == nullptr)
+    {
+        // 큐브의 정점 데이터
+        vertices = {
+            { { -1.0f,  1.0f, -1.0f, 1.0f }, {  0.0f,  0.0f, -1.0f }, {  1.0f,  0.0f,  0.0f }, { 0.0f, 0.0f } }, // 0
+            { {  1.0f,  1.0f, -1.0f, 1.0f }, {  0.0f,  0.0f, -1.0f }, {  1.0f,  0.0f,  0.0f }, { 1.0f, 0.0f } }, // 1
+            { {  1.0f, -1.0f, -1.0f, 1.0f }, {  0.0f,  0.0f, -1.0f }, {  1.0f,  0.0f,  0.0f }, { 1.0f, 1.0f } }, // 2
+            { { -1.0f, -1.0f, -1.0f, 1.0f }, {  0.0f,  0.0f, -1.0f }, {  1.0f,  0.0f,  0.0f }, { 0.0f, 1.0f } }, // 3
+
+            // Back face
+            { { -1.0f,  1.0f,  1.0f, 1.0f }, {  0.0f,  0.0f,  1.0f }, { -1.0f,  0.0f,  0.0f }, { 0.0f, 0.0f } }, // 4
+            { {  1.0f,  1.0f,  1.0f, 1.0f }, {  0.0f,  0.0f,  1.0f }, { -1.0f,  0.0f,  0.0f }, { 1.0f, 0.0f } }, // 5
+            { {  1.0f, -1.0f,  1.0f, 1.0f }, {  0.0f,  0.0f,  1.0f }, { -1.0f,  0.0f,  0.0f }, { 1.0f, 1.0f } }, // 6
+            { { -1.0f, -1.0f,  1.0f, 1.0f }, {  0.0f,  0.0f,  1.0f }, { -1.0f,  0.0f,  0.0f }, { 0.0f, 1.0f } }, // 7
+
+            // Top face
+            { { -1.0f,  1.0f,  1.0f, 1.0f }, {  0.0f,  1.0f,  0.0f }, {  1.0f,  0.0f,  0.0f }, { 0.0f, 0.0f } }, // 8
+            { {  1.0f,  1.0f,  1.0f, 1.0f }, {  0.0f,  1.0f,  0.0f }, {  1.0f,  0.0f,  0.0f }, { 1.0f, 0.0f } }, // 9
+            { {  1.0f,  1.0f, -1.0f, 1.0f }, {  0.0f,  1.0f,  0.0f }, {  1.0f,  0.0f,  0.0f }, { 1.0f, 1.0f } }, // 10
+            { { -1.0f,  1.0f, -1.0f, 1.0f }, {  0.0f,  1.0f,  0.0f }, {  1.0f,  0.0f,  0.0f }, { 0.0f, 1.0f } }, // 11
+
+            // Bottom face
+            { { -1.0f, -1.0f,  1.0f, 1.0f }, {  0.0f, -1.0f,  0.0f }, { -1.0f,  0.0f,  0.0f }, { 0.0f, 0.0f } }, // 12
+            { {  1.0f, -1.0f,  1.0f, 1.0f }, {  0.0f, -1.0f,  0.0f }, { -1.0f,  0.0f,  0.0f }, { 1.0f, 0.0f } }, // 13
+            { {  1.0f, -1.0f, -1.0f, 1.0f }, {  0.0f, -1.0f,  0.0f }, { -1.0f,  0.0f,  0.0f }, { 1.0f, 1.0f } }, // 14
+            { { -1.0f, -1.0f, -1.0f, 1.0f }, {  0.0f, -1.0f,  0.0f }, { -1.0f,  0.0f,  0.0f }, { 0.0f, 1.0f } }, // 15
+
+            // Left face
+            { { -1.0f,  1.0f,  1.0f, 1.0f }, { -1.0f,  0.0f,  0.0f }, {  0.0f,  0.0f,  1.0f }, { 0.0f, 0.0f } }, // 16
+            { { -1.0f,  1.0f, -1.0f, 1.0f }, { -1.0f,  0.0f,  0.0f }, {  0.0f,  0.0f,  1.0f }, { 1.0f, 0.0f } }, // 17
+            { { -1.0f, -1.0f, -1.0f, 1.0f }, { -1.0f,  0.0f,  0.0f }, {  0.0f,  0.0f,  1.0f }, { 1.0f, 1.0f } }, // 18
+            { { -1.0f, -1.0f,  1.0f, 1.0f }, { -1.0f,  0.0f,  0.0f }, {  0.0f,  0.0f,  1.0f }, { 0.0f, 1.0f } }, // 19
+
+            // Right face
+            { {  1.0f,  1.0f,  1.0f, 1.0f }, {  1.0f,  0.0f,  0.0f }, {  0.0f,  0.0f, -1.0f }, { 0.0f, 0.0f } }, // 20
+            { {  1.0f,  1.0f, -1.0f, 1.0f }, {  1.0f,  0.0f,  0.0f }, {  0.0f,  0.0f, -1.0f }, { 1.0f, 0.0f } }, // 21
+            { {  1.0f, -1.0f, -1.0f, 1.0f }, {  1.0f,  0.0f,  0.0f }, {  0.0f,  0.0f, -1.0f }, { 1.0f, 1.0f } }, // 22
+            { {  1.0f, -1.0f,  1.0f, 1.0f }, {  1.0f,  0.0f,  0.0f }, {  0.0f,  0.0f, -1.0f }, { 0.0f, 1.0f } }, // 23
+        };
+
+        // 큐브의 인덱스 데이터
+        indices = {
+            0,  1,  2,  0,  2,  3,  // Front face
+            4,  6,  5,  4,  7,  6,  // Back face
+            8,  9, 10,  8, 10, 11,  // Top face
+            12, 14, 13, 12, 15, 14, // Bottom face
+            16, 17, 18, 16, 18, 19, // Left face
+            22, 21, 20, 23, 22, 20  // Right face
+        };
+        CreateMesh();
+    }
+   
+    CreateDefaultMaterial(L"CubeObject/CubeMesh");
+}
+
+void CubeMeshRender::DefaultMaterialEvent(std::unique_ptr<ShaderNodeEditor>& editor)
+{    
+    constexpr Vector3 albedo = { 0.39f, 0.39f, 0.39f };
+    editor->SetResultNode<ConstantVector3Node>(albedo, (const char*)u8"값", EShaderResult::Albedo);
+    editor->SetResultNode<ConstantVector3Node>(albedo * 0.05f, (const char*)u8"값", EShaderResult::Emissive);
+}

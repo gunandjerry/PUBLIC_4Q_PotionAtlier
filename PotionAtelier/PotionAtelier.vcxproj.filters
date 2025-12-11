@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Source\EditorScene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MainEntry.cpp" />
+    <ClCompile Include="Source\StartApp.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\Cauldron.cpp">
+      <Filter>Component\Interactable\Gamasot</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\Cooker.cpp">
+      <Filter>Component\Interactable\Cooker</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\HandMillCooker.cpp">
+      <Filter>Component\Interactable\Cooker\HandMill</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\SqueezerCooker.cpp">
+      <Filter>Component\Interactable\Cooker\Squeezer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\CuttingBoardCooker.cpp">
+      <Filter>Component\Interactable\Cooker\CuttingBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\DeliverCounter.cpp">
+      <Filter>Component\Interactable\Counter</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\TrashBin.cpp">
+      <Filter>Component\Interactable\TrashBin</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\IngredientStand.cpp">
+      <Filter>Component\Interactable\IngredientStand</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\CustomerAI.cpp">
+      <Filter>Component\Customer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CustomerState.cpp">
+      <Filter>Component\Customer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\GameManagerComponent.cpp">
+      <Filter>Component\GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\CustomerSpawner.cpp">
+      <Filter>Component\Spawner</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\GridPlacementSystem.cpp">
+      <Filter>Component\GridPlacement</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\PlayerController.cpp">
+      <Filter>Component\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\Interactable.cpp">
+      <Filter>Component\Interactable</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\Obstacle.cpp">
+      <Filter>Object\ObstacleObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\Player.cpp">
+      <Filter>Object\PlayerObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\Throwable.cpp">
+      <Filter>Component\Interactable</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\CauldronObject.cpp">
+      <Filter>Object\InteractableObject\GamasotObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\GnomeCustomer.cpp">
+      <Filter>Object\InteractableObject\CustomerObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\MageCustomer.cpp">
+      <Filter>Object\InteractableObject\CustomerObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\UIPoping.cpp">
+      <Filter>Component\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\TrashBinObject.cpp">
+      <Filter>Object\InteractableObject\TrashBinObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\SpawnerObject.cpp">
+      <Filter>Object\InteractableObject\SpawnerObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\CounterObject.cpp">
+      <Filter>Object\InteractableObject\CounterObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\Holding.cpp">
+      <Filter>Component\Holding</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\HoldingObject.cpp">
+      <Filter>Object\HoldingObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\GameManager.cpp">
+      <Filter>Object\GameManagerObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\CuttingBoardObject.cpp">
+      <Filter>Object\InteractableObject\CookerObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\InteractableBlock.cpp">
+      <Filter>Object\InteractableObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\IngredientStandObject.cpp">
+      <Filter>Object\InteractableObject\IngredientStandObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PostProcessUtility.cpp">
+      <Filter>PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\Map.cpp">
+      <Filter>Object\MapObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\SqueezerObject.cpp">
+      <Filter>Object\InteractableObject\CookerObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\HandMillObject.cpp">
+      <Filter>Object\InteractableObject\CookerObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\BoingBoing.cpp">
+      <Filter>Component\BoingBoing</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PostProcessUtility.cpp">
+      <Filter>PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\Test_FeverUI.cpp" />
+    <ClCompile Include="Source\Object\TextObject.cpp">
+      <Filter>Object\TextObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\FlyingGnome.cpp">
+      <Filter>Component\Customer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\TextBubble.cpp">
+      <Filter>Component\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\CustomerTrail.cpp">
+      <Filter>Object\TrailObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\WaypointComponent.cpp">
+      <Filter>Component\Trail</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\BlendColorGradingControll.cpp">
+      <Filter>Component\ColorGrading</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\TutorialButton.cpp" />
+    <ClCompile Include="Source\Components\TutorialButtonComponent.cpp" />
+    <ClCompile Include="Source\Components\EmptyTable.cpp" />
+    <ClCompile Include="Source\Object\EmptyTableObject.cpp" />
+    <ClCompile Include="Source\Components\TutorialManagerComponent.cpp" />
+    <ClCompile Include="Source\Components\TextPoping.cpp" />
+    <ClCompile Include="Source\Object\TutorialManager.cpp" />
+    <ClCompile Include="Source\StringResource.cpp" />
+    <ClCompile Include="Source\Object\BackGroundMusicObject.cpp" />
+    <ClCompile Include="Source\Object\AudioPlayerObject.cpp" />
+    <ClCompile Include="Source\Scene\MainGameScene.cpp" />
+    <ClCompile Include="Source\Object\ButtonObject\ButtonObjectBase.cpp" />
+    <ClCompile Include="Source\Object\ButtonObject\GameStartButton.cpp" />
+    <ClCompile Include="Source\Object\ButtonObject\ExitButton.cpp" />
+    <ClCompile Include="Source\Object\RecipeManager.cpp" />
+    <ClCompile Include="Source\Components\RecipeManagerComponent.cpp" />
+    <ClCompile Include="Source\Components\BroomComponent.cpp" />
+    <ClCompile Include="Source\Object\BroomObject.cpp" />
+    <ClCompile Include="Source\Object\LightControllObject.cpp" />
+    <ClCompile Include="Source\Components\LightControllComponent.cpp" />
+    <ClCompile Include="Source\Object\CutSceneManagerObject.cpp" />
+    <ClCompile Include="Source\Object\VideoObject.cpp" />
+    <ClCompile Include="Source\Object\EmptyBoxColliderObject.cpp" />
+    <ClCompile Include="Source\Object\ButtonObject\CutSceneSkipButton.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Scenes">
+      <UniqueIdentifier>{27f44787-e7ce-47a8-a5d1-6582f3b1a425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{ce3cd846-8798-4fed-ae07-624cadf3dac8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{97c80f09-be70-4b90-99ab-f8bc23f32b93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component">
+      <UniqueIdentifier>{344a7e8a-44d7-4011-8c0b-05753db18115}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\Interactable">
+      <UniqueIdentifier>{ae1fde3d-fde1-4078-95d2-2f10a8839b3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\Interactable\Cooker">
+      <UniqueIdentifier>{dc1dcb5a-44bd-4eba-be7c-ec88d8c4f4a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\Interactable\Cooker\HandMill">
+      <UniqueIdentifier>{3052804f-a85f-4685-9469-93acb54126d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\Interactable\Cooker\CuttingBoard">
+      <UniqueIdentifier>{752e7331-de29-4650-94d4-468e692ba76c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\Interactable\Cooker\Squeezer">
+      <UniqueIdentifier>{918d76d6-ae86-490c-852d-e0afe228d641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\Interactable\Gamasot">
+      <UniqueIdentifier>{b4860b25-33a0-45fb-93c0-3863e0ed27cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\Interactable\Counter">
+      <UniqueIdentifier>{108fb3cc-f1cd-4624-9c73-0e73830e82e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\Interactable\TrashBin">
+      <UniqueIdentifier>{5a4a9ac9-f31a-4175-a15a-379b4218c88e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\Interactable\IngredientStand">
+      <UniqueIdentifier>{d1cda2db-3852-482b-9af8-d24e34bb3700}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\Customer">
+      <UniqueIdentifier>{672b62d3-d6a4-4bb5-8419-6fa8a7877e3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\GameManager">
+      <UniqueIdentifier>{941fb3ee-fd08-4d19-b120-b761a870861b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\Player">
+      <UniqueIdentifier>{815b9afe-2a78-4913-8987-a39c561358b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\Spawner">
+      <UniqueIdentifier>{402a78a0-a441-46ca-835d-78456db59ef7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{38b1a58a-8e9a-47db-bda6-16d00405cb42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\GridPlacement">
+      <UniqueIdentifier>{2c762b99-6d73-4e91-a4b4-57b785002ff1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\InteractableObject">
+      <UniqueIdentifier>{8c0902bb-3d66-4be0-b162-adedfb2decfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\PlayerObject">
+      <UniqueIdentifier>{5b77073c-eb91-40d3-8d62-123e48ae3974}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\ObstacleObject">
+      <UniqueIdentifier>{c6f5fa12-ee4c-4ecf-adda-f49ed2904bb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\InteractableObject\GamasotObject">
+      <UniqueIdentifier>{960c04e6-4f1d-4a64-b3f4-fac1e7fee707}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\InteractableObject\CookerObject">
+      <UniqueIdentifier>{b7092843-5bf7-4938-9adc-07d59aef9eb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\InteractableObject\CustomerObject">
+      <UniqueIdentifier>{8ef73c06-8379-45c6-839d-bd84d1e4aea8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\UI">
+      <UniqueIdentifier>{7cd90c46-3067-48fd-8ced-28fe0afc5828}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\InteractableObject\TrashBinObject">
+      <UniqueIdentifier>{c05b861f-bbd6-4b45-87ab-2b0d953a20dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\InteractableObject\SpawnerObject">
+      <UniqueIdentifier>{68560b2d-ec11-4433-9286-55304f88da73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\InteractableObject\CounterObject">
+      <UniqueIdentifier>{1dbb3e8f-6a70-49b2-aad8-315e82b0ba8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\Holding">
+      <UniqueIdentifier>{8f7a6259-043a-4396-b819-0dc3bd6eeafa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\HoldingObject">
+      <UniqueIdentifier>{669fe897-b6bb-43c7-b8f4-3dd92c50810c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\GameManagerObject">
+      <UniqueIdentifier>{0255ad6d-e440-47f7-8ea2-9f87b712e2c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\InteractableObject\IngredientStandObject">
+      <UniqueIdentifier>{0fdd95a4-5f3d-4b92-a607-17f5031c7396}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PostProcess">
+      <UniqueIdentifier>{b978e7c6-c3e6-4ca6-8b85-a2812bbb375a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\MapObject">
+      <UniqueIdentifier>{88cb45df-bcb5-4464-990e-dd483e2c5bb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\BoingBoing">
+      <UniqueIdentifier>{2d18a7bb-730a-4b65-9ad0-aa99f371382a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\TextObject">
+      <UniqueIdentifier>{465ef5a7-1715-47f8-a399-ef7e10e3fdbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\Text">
+      <UniqueIdentifier>{0cef14eb-b702-46a2-9dac-86e2c0d0d0b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{6bd2b8b6-bf95-46db-a8fd-4641066d46bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\TrailObject">
+      <UniqueIdentifier>{26471f8e-edd9-48a9-8284-30360e270ac7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\Trail">
+      <UniqueIdentifier>{f05d7e0d-b154-40ad-9cee-00abeedb2779}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\ColorGrading">
+      <UniqueIdentifier>{c91d3d14-8713-4d6c-ac3b-bd706049f4dc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\EditorScene.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\StartApp.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\Cauldron.h">
+      <Filter>Component\Interactable\Gamasot</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\Cooker.h">
+      <Filter>Component\Interactable\Cooker</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\HandMillCooker.h">
+      <Filter>Component\Interactable\Cooker\HandMill</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\SqueezerCooker.h">
+      <Filter>Component\Interactable\Cooker\Squeezer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\CuttingBoardCooker.h">
+      <Filter>Component\Interactable\Cooker\CuttingBoard</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\DeliverCounter.h">
+      <Filter>Component\Interactable\Counter</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\TrashBin.h">
+      <Filter>Component\Interactable\TrashBin</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\IngredientStand.h">
+      <Filter>Component\Interactable\IngredientStand</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\CustomerAI.h">
+      <Filter>Component\Customer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CustomerState.h">
+      <Filter>Component\Customer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\GameManagerComponent.h">
+      <Filter>Component\GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\CustomerSpawner.h">
+      <Filter>Component\Spawner</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\GridPlacementSystem.h">
+      <Filter>Component\GridPlacement</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\PlayerController.h">
+      <Filter>Component\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\Interactable.h">
+      <Filter>Component\Interactable</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\Obstacle.h">
+      <Filter>Object\ObstacleObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\Player.h">
+      <Filter>Object\PlayerObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\Throwable.h">
+      <Filter>Component\Interactable</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\CauldronObject.h">
+      <Filter>Object\InteractableObject\GamasotObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\GnomeCustomer.h">
+      <Filter>Object\InteractableObject\CustomerObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\MageCustomer.h">
+      <Filter>Object\InteractableObject\CustomerObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\TrashBinObject.h">
+      <Filter>Object\InteractableObject\TrashBinObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\SpawnerObject.h">
+      <Filter>Object\InteractableObject\SpawnerObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\UIPoping.h">
+      <Filter>Component\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\CounterObject.h">
+      <Filter>Object\InteractableObject\CounterObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\Holding.h">
+      <Filter>Component\Holding</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\HoldingObject.h">
+      <Filter>Object\HoldingObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\GameManager.h">
+      <Filter>Object\GameManagerObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\CuttingBoardObject.h">
+      <Filter>Object\InteractableObject\CookerObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\InteractableBlock.h">
+      <Filter>Object\InteractableObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\IngredientStandObject.h">
+      <Filter>Object\InteractableObject\IngredientStandObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\PostProcessUtility.h">
+      <Filter>PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\Map.h">
+      <Filter>Object\MapObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\SqueezerObject.h">
+      <Filter>Object\InteractableObject\CookerObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\HandMillObject.h">
+      <Filter>Object\InteractableObject\CookerObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\BoingBoing.h">
+      <Filter>Component\BoingBoing</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\PostProcessUtility.h">
+      <Filter>PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\Test_FeverUI.h" />
+    <ClInclude Include="Source\Object\TextObject.h">
+      <Filter>Object\TextObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\FlyingGnome.h">
+      <Filter>Component\Customer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\TextBubble.h">
+      <Filter>Component\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ResourceFinder.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\EventDelegate.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\HoldableTypes.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\CustomerTrail.h">
+      <Filter>Object\TrailObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\WaypointComponent.h">
+      <Filter>Component\Trail</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\BlendColorGradingControll.h">
+      <Filter>Component\ColorGrading</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\TutorialButton.h" />
+    <ClInclude Include="Source\Components\TutorialButtonComponent.h" />
+    <ClInclude Include="Source\Components\EmptyTable.h" />
+    <ClInclude Include="Source\Object\EmptyTableObject.h" />
+    <ClInclude Include="Source\Components\TutorialManagerComponent.h" />
+    <ClInclude Include="Source\ComponentBlueprint.h" />
+    <ClInclude Include="Source\Components\TextPoping.h" />
+    <ClInclude Include="Source\Object\TutorialManager.h" />
+    <ClInclude Include="Source\StringResource.h" />
+    <ClInclude Include="Source\Object\BackGroundMusicObject.h" />
+    <ClInclude Include="Source\Object\AudioPlayerObject.h" />
+    <ClInclude Include="Source\Scene\MainGameScene.h" />
+    <ClInclude Include="Source\Object\ButtonObject\ButtonObjectBase.h" />
+    <ClInclude Include="Source\Object\ButtonObject\ExitButton.h" />
+    <ClInclude Include="Source\Object\ButtonObject\GameStartButton.h" />
+    <ClInclude Include="Source\Object\RecipeManager.h" />
+    <ClInclude Include="Source\Components\RecipeManagerComponent.h" />
+    <ClInclude Include="Source\Components\BroomComponent.h" />
+    <ClInclude Include="Source\Object\BroomObject.h" />
+    <ClInclude Include="Source\Object\LightControllObject.h" />
+    <ClInclude Include="Source\Components\LightControllComponent.h" />
+    <ClInclude Include="Source\Object\CutSceneManagerObject.h" />
+    <ClInclude Include="Source\Object\VideoObject.h" />
+    <ClInclude Include="Source\Object\EmptyBoxColliderObject.h" />
+    <ClInclude Include="Source\Object\ButtonObject\CutSceneSkipButton.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Resource\Shader\EdgeDetection2.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Resource\Shader\BlendColorGrading.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Resource\Shader\AddOriginEdge.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Resource\Shader\EdgeBlurHorizontal.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Resource\Shader\EdgeBlurVertical.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Resource\Shader\EdgeDetection.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

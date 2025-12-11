@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Editor|Win32">
+      <Configuration>Editor</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Editor|x64">
+      <Configuration>Editor</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{15CF9B1D-70FB-4C09-AB21-DD49D77A4CD4}</ProjectGuid>
+    <RootNamespace>My1Start</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>PotionAtelier</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Editor|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Editor|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Editor|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Editor|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)$(Platform)\$(Configuration)\</IntDir>
+    <CopyCppRuntimeToOutputDir>true</CopyCppRuntimeToOutputDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)$(Platform)\$(Configuration)\</IntDir>
+    <CopyCppRuntimeToOutputDir>true</CopyCppRuntimeToOutputDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Editor|x64'">
+    <OutDir>$(ProjectDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)$(Platform)\$(Configuration)\</IntDir>
+    <CopyCppRuntimeToOutputDir>true</CopyCppRuntimeToOutputDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Editor|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_EDITOR;%(PreprocessorDefinitions);_SILENCE_CXX20_CODECVT_FACETS_DEPRECATION_WARNING;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>$(SolutionDir)D3D11_Engine\Source\;$(ProjectDir)Source\;$(SolutionDir)ThirdParty\fmod\include\;$(SolutionDir)Renderer\;$(VcpkgRoot)\installed\x64-windows\include\physx;$(SolutionDir)SQLite3;$(SolutionDir)SimpleLogger\inc\;$(SolutionDir)ImguiNodeEditor\include\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\;$(SolutionDir)ThirdParty\fmod\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>D3D11_Engine.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>"$(SolutionDir)$(Platform)\$(Configuration)\CopyShader.exe" $(ProjectDir)Resource\EngineShader\ $(SolutionDir)\D3D11_Engine\Source\EngineShader\ </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);_SILENCE_CXX20_CODECVT_FACETS_DEPRECATION_WARNING;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>$(SolutionDir)D3D11_Engine\Source\;$(ProjectDir)Source\;$(SolutionDir)ThirdParty\fmod\include\;$(SolutionDir)Renderer\;$(VcpkgRoot)\installed\x64-windows\include\physx;$(SolutionDir)SQLite3;$(SolutionDir)SimpleLogger\inc\;$(SolutionDir)ImguiNodeEditor\include\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\;$(SolutionDir)ThirdParty\fmod\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>D3D11_Engine.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>"$(SolutionDir)$(Platform)\$(Configuration)\CopyShader.exe" $(ProjectDir)Resource\EngineShader\ $(SolutionDir)\D3D11_Engine\Source\EngineShader\ </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Editor|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_EDITOR;%(PreprocessorDefinitions);_SILENCE_CXX20_CODECVT_FACETS_DEPRECATION_WARNING;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>$(SolutionDir)D3D11_Engine\Source\;$(ProjectDir)Source\;$(SolutionDir)ThirdParty\fmod\include\;$(SolutionDir)Renderer\;$(VcpkgRoot)\installed\x64-windows\include\physx;$(SolutionDir)SQLite3;$(SolutionDir)SimpleLogger\inc\;$(SolutionDir)ImguiNodeEditor\include\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration)\;$(SolutionDir)ThirdParty\fmod\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>D3D11_Engine.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>"$(SolutionDir)$(Platform)\$(Configuration)\CopyShader.exe" $(ProjectDir)Resource\EngineShader\ $(SolutionDir)\D3D11_Engine\Source\EngineShader\ </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Object\ButtonObject\CutSceneSkipButton.cpp" />
+    <ClCompile Include="Source\Object\EmptyBoxColliderObject.cpp" />
+    <ClCompile Include="Source\Object\CutSceneManagerObject.cpp" />
+    <ClCompile Include="Source\Components\LightControllComponent.cpp" />
+    <ClCompile Include="Source\Object\BroomObject.cpp" />
+    <ClCompile Include="Source\Components\BroomComponent.cpp" />
+    <ClCompile Include="Source\Components\RecipeManagerComponent.cpp" />
+    <ClCompile Include="Source\Object\LightControllObject.cpp" />
+    <ClCompile Include="Source\Object\RecipeManager.cpp" />
+    <ClCompile Include="Source\Object\AudioPlayerObject.cpp" />
+    <ClCompile Include="Source\Object\BackGroundMusicObject.cpp" />
+    <ClCompile Include="Source\Object\ButtonObject\ButtonObjectBase.cpp" />
+    <ClCompile Include="Source\Object\ButtonObject\ExitButton.cpp" />
+    <ClCompile Include="Source\Object\ButtonObject\GameStartButton.cpp" />
+    <ClCompile Include="Source\Object\EmptyTableObject.cpp" />
+    <ClCompile Include="Source\Components\EmptyTable.cpp" />
+    <ClCompile Include="Source\Object\BlendColorGradingControll.cpp" />
+    <ClCompile Include="Source\Components\FlyingGnome.cpp" />
+    <ClCompile Include="Source\Components\BoingBoing.cpp" />
+    <ClCompile Include="Source\Components\CustomerAI.cpp" />
+    <ClCompile Include="Source\Components\CustomerSpawner.cpp" />
+    <ClCompile Include="Source\Components\GameManagerComponent.cpp" />
+    <ClCompile Include="Source\Components\WaypointComponent.cpp" />
+    <ClCompile Include="Source\CustomerState.cpp" />
+    <ClCompile Include="Source\Object\CounterObject.cpp" />
+    <ClCompile Include="Source\Object\CauldronObject.cpp" />
+    <ClCompile Include="Source\Components\GridPlacementSystem.cpp" />
+    <ClCompile Include="Source\Object\CustomerTrail.cpp" />
+    <ClCompile Include="Source\Object\CuttingBoardObject.cpp" />
+    <ClCompile Include="Source\Object\GnomeCustomer.cpp" />
+    <ClCompile Include="Source\Object\HandMillObject.cpp" />
+    <ClCompile Include="Source\Object\IngredientStandObject.cpp" />
+    <ClCompile Include="Source\Object\GameManager.cpp" />
+    <ClCompile Include="Source\Object\HoldingObject.cpp" />
+    <ClCompile Include="Source\Components\Holding.cpp" />
+    <ClCompile Include="Source\Components\HandMillCooker.cpp" />
+    <ClCompile Include="Source\Components\Cauldron.cpp" />
+    <ClCompile Include="Source\Components\IngredientStand.cpp" />
+    <ClCompile Include="Source\Components\DeliverCounter.cpp" />
+    <ClCompile Include="Source\Components\CuttingBoardCooker.cpp" />
+    <ClCompile Include="Source\Components\Throwable.cpp" />
+    <ClCompile Include="Source\Components\Interactable.cpp" />
+    <ClCompile Include="Source\Object\MageCustomer.cpp" />
+    <ClCompile Include="Source\Object\SpawnerObject.cpp" />
+    <ClCompile Include="Source\Components\PlayerController.cpp" />
+    <ClCompile Include="Source\Components\Cooker.cpp" />
+    <ClCompile Include="Source\Object\InteractableBlock.cpp" />
+    <ClCompile Include="Source\Object\Map.cpp" />
+    <ClCompile Include="Source\Object\Obstacle.cpp" />
+    <ClCompile Include="Source\Object\Player.cpp" />
+    <ClCompile Include="Source\MainEntry.cpp" />
+    <ClCompile Include="Source\Object\TutorialManager.cpp" />
+    <ClCompile Include="Source\PostProcessUtility.cpp" />
+    <ClCompile Include="Source\Scene\MainGameScene.cpp" />
+    <ClCompile Include="Source\StartApp.cpp" />
+    <ClCompile Include="Source\EditorScene.cpp" />
+    <ClCompile Include="Source\Components\TrashBin.cpp" />
+    <ClCompile Include="Source\Components\SqueezerCooker.cpp" />
+    <ClCompile Include="Source\Object\TrashBinObject.cpp" />
+    <ClCompile Include="Source\Components\UIPoping.cpp" />
+    <ClCompile Include="Source\Object\SqueezerObject.cpp" />
+    <ClCompile Include="Source\Object\TextObject.cpp" />
+    <ClCompile Include="Source\Object\Test_FeverUI.cpp" />
+    <ClCompile Include="Source\Components\TextBubble.cpp" />
+    <ClCompile Include="Source\Object\TutorialButton.cpp" />
+    <ClCompile Include="Source\Components\TutorialButtonComponent.cpp" />
+    <ClCompile Include="Source\Components\TutorialManagerComponent.cpp" />
+    <ClCompile Include="Source\Components\TextPoping.cpp" />
+    <ClCompile Include="Source\StringResource.cpp" />
+    <ClCompile Include="Source\Object\VideoObject.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Object\ButtonObject\CutSceneSkipButton.h" />
+    <ClInclude Include="Source\Object\EmptyBoxColliderObject.h" />
+    <ClInclude Include="Source\Object\CutSceneManagerObject.h" />
+    <ClInclude Include="Source\Components\LightControllComponent.h" />
+    <ClInclude Include="Source\Object\BroomObject.h" />
+    <ClInclude Include="Source\Components\BroomComponent.h" />
+    <ClInclude Include="Source\Components\RecipeManagerComponent.h" />
+    <ClInclude Include="Source\Object\LightControllObject.h" />
+    <ClInclude Include="Source\Object\RecipeManager.h" />
+    <ClInclude Include="Source\Object\AudioPlayerObject.h" />
+    <ClInclude Include="Source\Object\BackGroundMusicObject.h" />
+    <ClInclude Include="Source\ComponentBlueprint.h" />
+    <ClInclude Include="Source\Object\ButtonObject\ButtonObjectBase.h" />
+    <ClInclude Include="Source\Object\ButtonObject\ExitButton.h" />
+    <ClInclude Include="Source\Object\ButtonObject\GameStartButton.h" />
+    <ClInclude Include="Source\Object\EmptyTableObject.h" />
+    <ClInclude Include="Source\Components\EmptyTable.h" />
+    <ClInclude Include="Source\Object\BlendColorGradingControll.h" />
+    <ClInclude Include="Source\Components\FlyingGnome.h" />
+    <ClInclude Include="Source\Components\BoingBoing.h" />
+    <ClInclude Include="Source\Components\CustomerAI.h" />
+    <ClInclude Include="Source\Components\CustomerSpawner.h" />
+    <ClInclude Include="Source\Components\GameManagerComponent.h" />
+    <ClInclude Include="Source\Components\WaypointComponent.h" />
+    <ClInclude Include="Source\CustomerState.h" />
+    <ClInclude Include="Source\EventDelegate.h" />
+    <ClInclude Include="Source\Object\CustomerTrail.h" />
+    <ClInclude Include="Source\Object\GnomeCustomer.h" />
+    <ClInclude Include="Source\Object\HandMillObject.h" />
+    <ClInclude Include="Source\Object\MageCustomer.h" />
+    <ClInclude Include="Source\Object\SpawnerObject.h" />
+    <ClInclude Include="Source\Object\TutorialManager.h" />
+    <ClInclude Include="Source\PostProcessUtility.h" />
+    <ClInclude Include="Source\ResourceFinder.h" />
+    <ClInclude Include="Source\Object\CounterObject.h" />
+    <ClInclude Include="Source\Object\CauldronObject.h" />
+    <ClInclude Include="Source\Components\GridPlacementSystem.h" />
+    <ClInclude Include="Source\Object\CuttingBoardObject.h" />
+    <ClInclude Include="Source\Object\IngredientStandObject.h" />
+    <ClInclude Include="Source\HoldableTypes.h" />
+    <ClInclude Include="Source\Object\GameManager.h" />
+    <ClInclude Include="Source\Object\HoldingObject.h" />
+    <ClInclude Include="Source\Components\Holding.h" />
+    <ClInclude Include="Source\Components\HandMillCooker.h" />
+    <ClInclude Include="Source\Components\Cauldron.h" />
+    <ClInclude Include="Source\Components\IngredientStand.h" />
+    <ClInclude Include="Source\Components\DeliverCounter.h" />
+    <ClInclude Include="Source\Components\CuttingBoardCooker.h" />
+    <ClInclude Include="Source\Components\Throwable.h" />
+    <ClInclude Include="Source\Components\Cooker.h" />
+    <ClInclude Include="Source\Object\InteractableBlock.h" />
+    <ClInclude Include="Source\Object\Map.h" />
+    <ClInclude Include="Source\Object\Obstacle.h" />
+    <ClInclude Include="Source\Object\Player.h" />
+    <ClInclude Include="Source\Components\PlayerController.h" />
+    <ClInclude Include="Source\Components\Interactable.h" />
+    <ClInclude Include="Source\Scene\MainGameScene.h" />
+    <ClInclude Include="Source\StartApp.h" />
+    <ClInclude Include="Source\EditorScene.h" />
+    <ClInclude Include="Source\Components\TrashBin.h" />
+    <ClInclude Include="Source\Components\SqueezerCooker.h" />
+    <ClInclude Include="Source\Object\TrashBinObject.h" />
+    <ClInclude Include="Source\Components\UIPoping.h" />
+    <ClInclude Include="Source\Object\SqueezerObject.h" />
+    <ClInclude Include="Source\Object\TextObject.h" />
+    <ClInclude Include="Source\Object\Test_FeverUI.h" />
+    <ClInclude Include="Source\Components\TextBubble.h" />
+    <ClInclude Include="Source\Object\TutorialButton.h" />
+    <ClInclude Include="Source\Components\TutorialButtonComponent.h" />
+    <ClInclude Include="Source\Components\TutorialManagerComponent.h" />
+    <ClInclude Include="Source\Components\TextPoping.h" />
+    <ClInclude Include="Source\StringResource.h" />
+    <ClInclude Include="Source\Object\VideoObject.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CopyShader\CopyShader.vcxproj">
+      <Project>{b3a0df58-9f3a-42f6-a929-b2128adfa8fd}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\D3D11_Engine\D3D11_Engine.vcxproj">
+      <Project>{c8880048-46a0-4cc4-be47-c3144cd15787}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ImguiNodeEditor\ImguiNodeEditor.vcxproj">
+      <Project>{d181dd16-0471-474a-9147-e2b6bfe7c8af}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Renderer\Renderer.vcxproj">
+      <Project>{346bd41a-c6de-4bd7-a7f4-d39c12318347}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SimpleLogger\SimpleLogger.vcxproj">
+      <Project>{72674c8a-87cc-411f-85fa-53d8a51245c2}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Resource\Shader\AddOriginEdge.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Editor|x64'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Editor|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="Resource\Shader\BlendColorGrading.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Editor|Win32'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Editor|Win32'">4.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Editor|x64'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Editor|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="Resource\Shader\EdgeBlurHorizontal.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Editor|x64'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Editor|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="Resource\Shader\EdgeBlurVertical.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Editor|x64'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Editor|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="Resource\Shader\EdgeDetection.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Editor|x64'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Editor|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="Resource\Shader\EdgeDetection2.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Editor|Win32'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Editor|Win32'">4.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Editor|x64'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Editor|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compute</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+    </FxCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
